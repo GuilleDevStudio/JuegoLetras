@@ -125,4 +125,3 @@ function updateRanking() {
         ranking.appendChild(li);
     });
 }
-
