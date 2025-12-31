@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+    background: #f6f7f9;
+    color: #1f2933;
+}
+
+.container {
+    max-width: 600px;  /* antes 1000px */
+    margin: auto;
+    padding: 40px 20px;
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    color: #111827;
+}
+
+/* Cards */
+.card {
+    width: 100%;
+    box-sizing: border-box;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 24px;
+    box-shadow:
+        0 10px 15px rgba(0,0,0,0.05),
+        0 4px 6px rgba(0,0,0,0.05);
+}
+
+.hidden {
+    display: none;
+}
+
+/* Inputs */
+label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    display: block;
+}
+
+input {
+    width: 100%;
+    padding: 12px 14px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 1px solid #d1d5db;
+    margin-bottom: 12px;
+    transition: border 0.2s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+/* Buttons */
+button {
+    max-width: 200px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 16px;
+    font-size: 15px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.2s, transform 0.1s;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+button.secondary {
+    background: #e5e7eb;
+    color: #374151;
+}
+
+button.secondary:hover {
+    background: #d1d5db;
+}
+
+.buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+/* Game layout */
+.game-area {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+
+/* Turn text */
+#turnText {
+    font-size: 1.3rem;
+    margin-bottom: 16px;
+}
+
+/* Info text */
+.info-text {
+    font-size: 13px;
+    color: #6b7280;
+    margin-top: -4px;
+    margin-bottom: 14px;
+}
+
+/* Ranking */
+.ranking h3 {
+    margin-bottom: 16px;
+}
+
+.ranking ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ranking li {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 14px;
+    margin-bottom: 8px;
+    border-radius: 10px;
+    background: #f3f4f6;
+    font-weight: 600;
+}
+
+/* Podium */
+.ranking li:nth-child(1) {
+    background: #fef3c7;
+}
+
+.ranking li:nth-child(2) {
+    background: #e5e7eb;
+}
+
+.ranking li:nth-child(3) {
+    background: #fde68a;
+}
+
+/* =========================
+   RESPONSIVE - MOBILE
+   ========================= */
+@media (max-width: 768px) {
+
+    .container {
+        padding: 20px 16px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        margin-bottom: 24px;
+    }
+
+    input {
+        font-size: 16px;
+    }
+
+    button {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #turnText {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .ranking li {
+        font-size: 15px;
+    }
+}
+
