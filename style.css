@@ -10,17 +10,22 @@ body {
 }
 
 .container {
-    max-width: 600px;  /* antes 1000px */
     margin: auto;
     padding: 40px 20px;
 }
 
-
 h1 {
     text-align: center;
-    font-size: 2.2rem;
+    font-size: 3.5rem;
     margin-bottom: 40px;
     color: #111827;
+}
+h2{
+    font-size: 2.8rem;
+}
+
+p{
+    font-size: 2.2rem;
 }
 
 /* Cards */
@@ -43,6 +48,7 @@ h1 {
 /* Inputs */
 label {
     font-weight: 600;
+    font-size: 3.0rem;
     margin-bottom: 6px;
     display: block;
 }
@@ -50,7 +56,7 @@ label {
 input {
     width: 100%;
     padding: 12px 14px;
-    font-size: 15px;
+    font-size: 3.0rem;
     border-radius: 10px;
     border: 1px solid #d1d5db;
     margin-bottom: 12px;
@@ -64,12 +70,11 @@ input:focus {
 
 /* Buttons */
 button {
-    max-width: 200px;
     background: #2563eb;
     color: white;
     border: none;
     padding: 12px 16px;
-    font-size: 15px;
+    font-size: 2.5rem;
     border-radius: 12px;
     cursor: pointer;
     font-weight: 600;
@@ -109,13 +114,13 @@ button.secondary:hover {
 
 /* Turn text */
 #turnText {
-    font-size: 1.3rem;
+    font-size: 2.5rem;
     margin-bottom: 16px;
 }
 
 /* Info text */
 .info-text {
-    font-size: 13px;
+    font-size: 2.2rem;
     color: #6b7280;
     margin-top: -4px;
     margin-bottom: 14px;
@@ -124,6 +129,7 @@ button.secondary:hover {
 /* Ranking */
 .ranking h3 {
     margin-bottom: 16px;
+    font-size: 2.5rem;
 }
 
 .ranking ul {
@@ -140,6 +146,7 @@ button.secondary:hover {
     border-radius: 10px;
     background: #f3f4f6;
     font-weight: 600;
+    font-size: 2.5rem;
 }
 
 /* Podium */
@@ -165,7 +172,7 @@ button.secondary:hover {
     }
 
     h1 {
-        font-size: 1.8rem;
+        font-size: 3.0rem;
         margin-bottom: 24px;
     }
 
@@ -192,4 +199,3 @@ button.secondary:hover {
         font-size: 15px;
     }
 }
-
